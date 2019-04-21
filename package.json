@@ -1,6 +1,6 @@
 {
   "name": "nwtgck-installable-from-github",
-  "version": "0.1.0-SNAPSHOT",
+  "version": "0.1.0",
   "description": "This is a sample of buildable and installable package from npm and also GitHub",
   "bin": {
     "nwtgck-installable-from-github": "src/index.js"
