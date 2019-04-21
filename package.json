@@ -9,7 +9,7 @@
   "types": "dist/src/mylib.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "start": "npm run build && node src/index.js",
     "test": "mocha --require ts-node/register test/**/*.ts"
   },
