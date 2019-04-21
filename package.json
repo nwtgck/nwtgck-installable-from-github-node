@@ -1,0 +1,40 @@
+{
+  "name": "nwtgck-installable-from-github",
+  "version": "0.1.0",
+  "description": "This is a sample of buildable and installable package from npm and also GitHub",
+  "bin": {
+    "nwtgck-installable-from-github": "src/index.js"
+  },
+  "main": "dist/src/mylib.js",
+  "types": "dist/src/mylib.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "start": "npm run build && node src/index.js",
+    "test": "mocha --require ts-node/register test/**/*.ts"
+  },
+  "keywords": [
+    "installable",
+    "typescript",
+    "github"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nwtgck/nwtgck-installable-from-github-node"
+  },
+  "author": "Ryo Ota",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^5.0.0",
+    "@types/node": "^11.12.1",
+    "@types/power-assert": "^1.5.0",
+    "@types/yargs": "^12.0.10",
+    "mocha": "^5.0.5",
+    "power-assert": "^1.4.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "yargs": "^13.2.2"
+  }
+}
